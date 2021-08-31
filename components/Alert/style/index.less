@@ -1,0 +1,42 @@
+@import '../../style/index.less';
+@import "../../style/color/default";
+
+.frog-alert {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding: 8px 15px;
+  color: rgba(0,0,0,.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  word-wrap: break-word;
+  list-style: none;
+  border: 1px solid;
+  border-radius: 2px;
+  font-feature-settings: "tnum";
+
+  &-success {
+    background: @cyan2;
+    border-color: @cyan4;
+  }
+
+  &-info {
+    background: @blue2;
+    border-color: @blue4;
+  }
+
+  &-warning {
+    background: @yellow2;
+    border-color: @yellow4;
+  }
+
+  &-error {
+    background: @red2;
+    border-color: @red4;
+  }
+}

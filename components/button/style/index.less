@@ -1,0 +1,75 @@
+@import '../../style/index.less';
+@import "../../style/color/default";
+
+.frog-btn {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  margin-right: 8px;
+  margin-bottom: 12px;
+  padding: 4px 15px;
+  color: rgba(0,0,0,.85);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5715;
+  white-space: nowrap;
+  text-align: center;
+  background: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  outline: none;
+  box-shadow: 0 2px 0 rgba(0,0,0,.015);
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  user-select: none;
+  touch-action: manipulation;
+
+  &-default {
+    &:hover {
+      color: @blue4;
+      border-color: @blue4;
+    }
+    &:active {
+      color: @blue6;
+      border-color: @blue6;
+    }
+  }
+
+  &-primary {
+    color: #fff;
+    background: @blue6;
+    border-color: @blue6;
+    &:hover {
+      background: @blue5;
+    }
+    &:active {
+      background: @blue7;
+    }
+  }
+
+  &-warning {
+    color: #fff;
+    background: @yellow6;
+    border-color: @yellow6;
+    &:hover {
+      background: @yellow5;
+    }
+    &:active {
+      background: @yellow7;
+    }
+  }
+
+  &-danger {
+    color: #fff;
+    background: @red6;
+    border-color: @red6;
+    &:hover {
+      background: @red5;
+    }
+    &:active {
+      background: @red7;
+    }
+  }
+}
+

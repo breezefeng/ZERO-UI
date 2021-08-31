@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component <Button /> Test should render default 1`] = `
+<button
+  className="frog-btn frog-btn-default"
+  onClick={[Function]}
+>
+  default
+</button>
+`;
+
+exports[`Component <Button /> Test should render specific type 1`] = `
+Array [
+  <button
+    className="frog-btn frog-btn-default"
+    onClick={[Function]}
+  >
+    default
+  </button>,
+  <button
+    className="frog-btn frog-btn-primary"
+    onClick={[Function]}
+  >
+    primary
+  </button>,
+  <button
+    className="frog-btn frog-btn-danger"
+    onClick={[Function]}
+  >
+    danger
+  </button>,
+  <button
+    className="frog-btn frog-btn-warning"
+    onClick={[Function]}
+  >
+    warning
+  </button>,
+]
+`;

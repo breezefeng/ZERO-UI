@@ -1,4 +1,4 @@
-const resolve = require('@rollup/plugin-node-resolve');
+const resolve = require('@rollup/plugin-node-resolve').default;
 const { babel } = require('@rollup/plugin-babel');
 const peerDepsExternal = require('rollup-plugin-peer-deps-external');
 const commonjs = require('@rollup/plugin-commonjs');

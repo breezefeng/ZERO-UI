@@ -13,7 +13,7 @@ const currentVersion = pkg.version;
 
 const run = async command => {
   console.log(chalk.green(command));
-  console.log(await exec(command));
+  await exec(command);
 };
 
 const logTime = (logInfo, type) => {
@@ -90,7 +90,7 @@ const build = async () => {
 
 const publish = async () => {
   logTime('Publish Npm', 'start');
-  await run('npm publish');
+  await run('npm publish --access public');
   logTime('Publish Npm', 'end');
 };
 

@@ -1,11 +1,11 @@
-const child_process = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const inquirer = require('inquirer');
 const chalk = require('chalk');
 const util = require('util');
 const semver = require('semver');
-const exec = util.promisify(child_process.exec);
+const execSh = require('exec-sh');
+const exec = util.promisify(execSh);
 const semverInc = semver.inc;
 const pkg = require('../package.json');
 

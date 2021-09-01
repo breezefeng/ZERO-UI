@@ -1,4 +1,4 @@
 module.exports = {
   DIST_DIR: 'dist',
-  DIST_NAME: 'frog'
+  DIST_NAME: 'zero'
 };

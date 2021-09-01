@@ -9,8 +9,8 @@ type Props = {
 const Alert: React.FC<Props> = ({ type = 'default', message }) => {
   return (
     <div
-      className={classNames('frog-alert', {
-        [`frog-alert-${type}`]: true,
+      className={classNames('zero-alert', {
+        [`zero-alert-${type}`]: true,
       })}
     >
       {message}

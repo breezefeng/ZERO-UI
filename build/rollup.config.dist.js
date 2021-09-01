@@ -8,7 +8,7 @@ const { DIST_DIR, DIST_NAME } = require('./constant');
 module.exports = {
   input: 'components/index.tsx',
   output: {
-    name: 'Frog',
+    name: 'Zero',
     file: `${DIST_DIR}/${DIST_NAME}.js`,
     format: 'umd',
     sourcemap: true,

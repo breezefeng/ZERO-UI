@@ -3,11 +3,11 @@
   "version": "1.0.1",
   "description": "",
   "keywords": [],
-  "author": "",
+  "author": "breezefeng",
   "license": "ISC",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "unpkg": "dist/frog.min.js",
+  "unpkg": "dist/zero.min.js",
   "files": [
     "dist",
     "lib",

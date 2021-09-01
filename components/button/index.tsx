@@ -13,8 +13,8 @@ const Button: React.FC<Props> = ({ children, type = 'default', onClick }) => {
 
   return (
     <button
-      className={classNames('frog-btn', {
-        [`frog-btn-${type}`]: true,
+      className={classNames('zero-btn', {
+        [`zero-btn-${type}`]: true,
       })}
       onClick={handleClick}
     >

@@ -70,7 +70,7 @@ const genChangelog = async () => {
 const push = async nextVersion => {
   logTime('Push Git', 'start');
   await run('git add .');
-  await run(`git commit -m "publish frog-ui@${nextVersion}" -n`);
+  await run(`git commit -m "publish zero-ui@${nextVersion}" -n`);
   await run('git push');
   logTime('Push Git', 'end');
 };
@@ -78,7 +78,7 @@ const push = async nextVersion => {
 const tag = async nextVersion => {
   logTime('Push Git', 'start');
   await run(`git tag v${nextVersion}`);
-  await run(`git push origin tag frog-ui@${nextVersion}`);
+  await run(`git push origin tag zero-ui@${nextVersion}`);
   logTime('Push Git Tag', 'end');
 };
 

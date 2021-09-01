@@ -90,7 +90,7 @@ const build = async () => {
 
 const publish = async () => {
   logTime('Publish Npm', 'start');
-  await run('npm publish --access public');
+  await run('npm publish');
   logTime('Publish Npm', 'end');
 };
 

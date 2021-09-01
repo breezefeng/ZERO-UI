@@ -2,7 +2,6 @@ const resolve = require('@rollup/plugin-node-resolve').default;
 const { babel } = require('@rollup/plugin-babel');
 const peerDepsExternal = require('rollup-plugin-peer-deps-external');
 const commonjs = require('@rollup/plugin-commonjs');
-const { terser } = require('rollup-plugin-terser');
 const image = require('@rollup/plugin-image');
 const { DIST_DIR, DIST_NAME } = require('./constant');
 

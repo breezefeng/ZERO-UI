@@ -1,6 +1,6 @@
 {
   "name": "@breezefeng2020/zero-ui",
-  "version": "0.1.24",
+  "version": "0.1.25",
   "description": "",
   "keywords": [],
   "author": "breezefeng",
@@ -27,7 +27,7 @@
     "build:dist": "rm -rf dist && gulp compileDistTask",
     "build:lib": "rm -rf lib && gulp",
     "build:es": "rm -rf es && cross-env ENV_ES=true gulp",
-    "publishToNpm": "node build/release.js"
+    "publishToStore": "node build/release.js"
   },
   "lint-staged": {
     "components/**/*.ts?(x)": [

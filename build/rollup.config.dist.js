@@ -22,9 +22,6 @@ module.exports = {
     peerDepsExternal(),
     commonjs({
       include: ['node_modules/**', '../../node_modules/**'],
-      namedExports: {
-        'react-is': ['isForwardRef', 'isValidElementType'],
-      }
     }),
     resolve({
       extensions: ['.tsx', '.ts', '.js'],

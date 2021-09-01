@@ -77,8 +77,8 @@ const push = async nextVersion => {
 
 const tag = async nextVersion => {
   logTime('Push Git', 'start');
-  await run(`git tag v${nextVersion}`);
-  await run(`git push origin tag zero-ui@${nextVersion}`);
+  await run(`git tag zero-ui@v${nextVersion}`);
+  await run(`git push origin tag zero-ui@v${nextVersion}`);
   logTime('Push Git Tag', 'end');
 };
 
@@ -90,7 +90,7 @@ const build = async () => {
 
 const publish = async () => {
   logTime('Publish Npm', 'start');
-  console.log('------->', await run('npm publish'));
+  await run('npm publish');
   logTime('Publish Npm', 'end');
 };
 

@@ -19,6 +19,7 @@ output/
 .ice
 .vscode
 temp_cache/
+__snapshots__
 
 npm-debug.log*
 yarn-debug.log*

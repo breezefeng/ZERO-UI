@@ -13,7 +13,7 @@ const currentVersion = pkg.version;
 
 const run = async command => {
   console.log(chalk.green(command));
-  await exec(command);
+  await exec(command, true);
 };
 
 const logTime = (logInfo, type) => {
